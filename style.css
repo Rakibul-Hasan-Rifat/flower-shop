@@ -9,6 +9,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* --------- body styles that control the width of body tag so that it doesn't spread on the big screen --------- */
     max-width: 1440px;
@@ -40,9 +44,59 @@ button {
 }
 
 .features_section p,
-.instagram_posts_section p {
+.instagram_posts_section p,
+footer p {
     width: 50%;
     text-align: center;
+}
+
+h3 span {
+    color: #E55473;
+}
+
+/* ++++++++++++++++++++++++++++++++ indivisual tag styles ++++++++++++++++++++++++++++++++ */
+
+nav { /* ------ nav styles ----- */
+    width: 100%;
+    padding: 24px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > div {
+    width: 30%;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav div a h2 {
+    font-weight: 300;
+}
+
+nav div span {
+    color: #E55473;
+}
+
+nav > ul {
+    width: 60%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav li a {
+    color: #111010;
+    font-weight: bold;
 }
 
 header {
@@ -176,10 +230,6 @@ main {
     width: 40%;
 }
 
-.deal_description h3 span {
-    color: #E55473;
-}
-
 .deal_image {
     display: flex;
     justify-content: center;
@@ -238,4 +288,24 @@ main {
 
 .contact_container button {
     width: 20%;
+}
+
+footer {
+    padding: 55px;
+    background-color: #111010;
+}
+
+footer h3 {
+    color: #fff
+}
+
+footer p.section_description {
+    color: #fff;
+    text-align: center;
+}
+
+footer small {
+    display: block;
+    text-align: center;
+    color: rgba(255, 255, 255, .4);
 }
